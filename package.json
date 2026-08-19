@@ -1,0 +1,41 @@
+{
+  "name": "dsh-plugin-linus-ssh",
+  "version": "1.0.0",
+  "description": "Persistent OpenSSH tools so the agent can inspect and configure remote Linux servers.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "ssh",
+    "linus"
+  ],
+  "author": "xiaogu619520",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaogu619520/dsh-plugin-linus-ssh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaogu619520/dsh-plugin-linus-ssh/issues"
+  },
+  "homepage": "https://github.com/xiaogu619520/dsh-plugin-linus-ssh#readme",
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}
